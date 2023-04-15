@@ -39,7 +39,7 @@ app.get("/yeekee5", async (req, res) => {
   //   // Edge executable will return an empty string locally.
   const pathToExtension = "/usr/bin/chromium-browser";
   const browser = await puppeteer.launch({
-  //  executablePath: pathToExtension,
+    executablePath: pathToExtension,
     args: ["--disable-infobars", "--no-sandbox", "--disable-setuid-sandbox"],
     headless: true,
   });
